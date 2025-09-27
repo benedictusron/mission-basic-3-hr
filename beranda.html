@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
+        <style type="text/tailwindcss">
         @theme {
         --color-clifford: #da373d;
         --color-primary: #3ECF4C;
@@ -45,6 +45,14 @@
         --color-gradient-warning: #9D9EA1;
         --color-gradient-error: #9D9EA1; */
             --font-display: "Lato", sans-serif
+        }
+
+         .hide-scrollbar {
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE 10+ */
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
         }
     </style>
 </head>
@@ -97,7 +105,7 @@
         <section class="flex items-center justify-center px-5  sm:w-full sm:px-[120px] ">
             <div class="container max-w-fit sm:h-[400px] bg-cover bg-center bg-[url(/images/hero.jpg)] mt-16 mb-6 
             rounded-[10px] bg-black/80 bg-blend-darken object-cover">
-                <div class=" relative items-center text-center justify-center pt-9 sm:pt-20   mx-5 sm:max-w-fit sm:mx-[140px]  ">
+                <div class=" relative items-center text-center justify-center pt-9 sm:pt-20   mx-5 sm:max-w-fit sm:mx-[140px] ">
                     <h1 class="text-2xl font-bold pb-3 text-light-primary sm:text-5xl">Revolusi Pembelajaran: Temukan
                         Ilmu Baru
                         melalui
@@ -131,7 +139,7 @@
             <!-- Tabs -->
             <div class="flex pl-5 pb-8 sm:px-[120px]">
                 <!-- <ul class="flex gap-9 sm:gap-3 pt-[44px] font-medium text-base w-full "> -->
-                <ul class="flex  pt-[44px] font-medium text-base w-full ">
+                <ul class="flex pt-[44px] font-medium text-base w-full overflow-x-auto whitespace-nowrap hide-scrollbar">
                     <li class="relative focus:border-tertiary text-tertiary pb-3 pr-9 ">
                         <a href="" class="whitespace-nowrap">Semua Kelas</a>
                         <div class="h-2 rounded-full w-1/2 bg-tertiary mt-3"></div>
